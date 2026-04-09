@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    background-color: #424558;
+
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* permet de disposer mes anglais horizontalement , ce sont les anglais principaux*/
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+/* permet de cibler les anglais et les espacés et aussi avec une couleur */
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #fff;
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+/* permet d'enlever les puces sur des listes */
+nav li{
+    list-style-type: none;
+}
+/* display none permet de cacher les sous menus */
+.soumenu{
+    display: none;
+}
+/* permet de disposer horizontalement et supprimer l'alignement */
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+/* si l'utilisateur passe la souris sur les anglais, les sous menus doivent apparaitre */
+nav li:hover .soumenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 15px;
+    z-index: 1000; 
+    /* background-color: #9a99b9; */
+    cursor: pointer;
+}
+.soumenu li{
+    /* border-bottom: 1px solid #cf4f4f; */
+}
+.soumenu li a{
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #222538;
+    width: 140px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-fichier:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-accueil:hover{
+    border-top: 5px solid #251ddf;
+    background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-insertion:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-miseenpage:hover{
+    border-top: 5px solid #251ddf;
+    background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-reference:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 73, 0.15);
+}
+.menu-publipostage:hover{
+    border-top: 5px solid #251ddf;
+    background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-revision:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 73, 0.15);
+}
+.menu-affichage:hover{
+    border-top: 5px solid #251ddf;
+    background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-developpeur:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 73, 0.15);
+}
+.menu-aide:hover{
+    border-top: 5px solid #251ddf;
+    background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-recherche:hover{
+    border-top: 5px solid #e44d26;
+     background-color: rgba(95, 237, 73, 0.15);
+}
+.menu-fichier .soumenu{
+    background-color: RGBA(230, 100, 40, 0.15);
+}
+.menu-accueil .soumenu{
+    background-color: rgba(67, 40, 200, 0.15);
+}
+.menu-insertion .soumenu{
+    background-color: rgba(117, 163, 132, 0.15);
+}
+.menu-miseenpage .soumenu{
+    background-color: rgba(100, 230, 221, 0.15);
+}
+.menu-reference .soumenu{
+    background-color: rgba(230, 69, 176, 0.15);
+}
+.menu-publipostage .soumenu{
+    background-color: rgba(22, 67, 184, 0.15);
+}
+.menu-revision .soumenu{
+    background-color: RGBA(222, 202, 20, 0.15);
+}
+.menu-affichage .soumenu{
+    background-color: rgba(100, 150, 50, 0.15);
+}
+.menu-developpeur .soumenu{
+    background-color: rgba(160, 114, 109, 0.15);
+}
+.menu-aide .soumenu{
+    background-color: rgba(100, 200, 50, 0.15);
+}
+/* on veut que si l'utilisateur passe la souris que les anglais soient en blanc */
+.soumenu li:hover a{
+    color: #eee;
+    font-weight: bold;
+}
+.menu-fichier .soumenu li:hover, .menu-accueil .soumenu li:hover, .menu-insertion .soumenu li:hover, .menu-miseenpage .soumenu li:hover, .menu-reference .soumenu li:hover, .menu-publipostage .soumenu li:hover, .menu-revision .soumenu li:hover, .menu-affichage .soumenu li:hover, .menu-developpeur .soumenu li:hover, .menu-aide .soumenu li:hover, .menu-recherche .soumenu li:hover{
+    color: rgb(255, 250, 255);
+}
